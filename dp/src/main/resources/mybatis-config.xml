@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.ehaier.dp.bean.ExecutionLog" alias="executionLog" />
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC">
+				<property name="..." value="..." />
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://my-shop-wrt.vip.ehaieridc.net:3306/db_eop?characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull" />
+				<property name="username" value="report_eop_ser" />
+				<property name="password" value="8UD5fx9yD{IxgH]S[8mV" />
+				<property name="poolMaximumActiveConnections" value="1" />
+				<property name="poolMaximumIdleConnections" value="2" />
+				<property name="poolMaximumCheckoutTime" value="20000" />
+				<property name="poolTimeToWait" value="20000" />
+				<property name="poolPingQuery" value="/* ping */ select 1" />
+				<property name="poolPingEnabled" value="true" />
+				<property name="poolPingConnectionsNotUsedFor" value="60000" />
+			</dataSource>
+		</environment>
+		<environment id="development0">
+			<transactionManager type="JDBC">
+				<property name="..." value="..." />
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://127.0.0.1:3306/db_eop?characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull" />
+				<property name="username" value="root" />
+				<property name="password" value="123456" />
+				<property name="poolMaximumActiveConnections" value="1" />
+				<property name="poolMaximumIdleConnections" value="2" />
+				<property name="poolMaximumCheckoutTime" value="20000" />
+				<property name="poolTimeToWait" value="20000" />
+				<property name="poolPingQuery" value="NO PING QUERY SET" />
+				<property name="poolPingEnabled" value="false" />
+				<property name="poolPingConnectionsNotUsedFor" value="0" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="sql-mapper/eop_log.xml"/>
+	</mappers>
+</configuration>
