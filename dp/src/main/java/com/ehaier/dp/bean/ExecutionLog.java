@@ -22,13 +22,13 @@ public class ExecutionLog {
 	private Integer id;
 	private Type type;
 	private String code;
-	private Date requestTime;
-	private String requestFrom;
-	private Date responseTime;
-	private Long elapsedTime;
-	private String requestMsg;
-	private String responseMsg;
-	private String exceptionMsg;
+	private Date request_time;
+	private String request_from;
+	private Date response_time;
+	private Long elapsed_time;
+	private String request_msg;
+	private String response_msg;
+	private String exception_msg;
 
 	public Integer getId() {
 		return id;
@@ -54,60 +54,60 @@ public class ExecutionLog {
 		this.code = code;
 	}
 
-	public String getRequestFrom() {
-		return requestFrom;
+	public Date getRequest_time() {
+		return request_time;
 	}
 
-	public void setRequestFrom(String requestFrom) {
-		this.requestFrom = requestFrom;
+	public void setRequest_time(Date request_time) {
+		this.request_time = request_time;
 	}
 
-	public Date getRequestTime() {
-		return requestTime;
+	public String getRequest_from() {
+		return request_from;
 	}
 
-	public void setRequestTime(Date requestTime) {
-		this.requestTime = requestTime;
+	public void setRequest_from(String request_from) {
+		this.request_from = request_from;
 	}
 
-	public Date getResponseTime() {
-		return responseTime;
+	public Date getResponse_time() {
+		return response_time;
 	}
 
-	public void setResponseTime(Date responseTime) {
-		this.responseTime = responseTime;
+	public void setResponse_time(Date response_time) {
+		this.response_time = response_time;
 	}
 
-	public Long getElapsedTime() {
-		return elapsedTime;
+	public Long getElapsed_time() {
+		return elapsed_time;
 	}
 
-	public void setElapsedTime(Long elapsedTime) {
-		this.elapsedTime = elapsedTime;
+	public void setElapsed_time(Long elapsed_time) {
+		this.elapsed_time = elapsed_time;
 	}
 
-	public String getRequestMsg() {
-		return requestMsg;
+	public String getRequest_msg() {
+		return request_msg;
 	}
 
-	public void setRequestMsg(String requestMsg) {
-		this.requestMsg = requestMsg;
+	public void setRequest_msg(String request_msg) {
+		this.request_msg = request_msg;
 	}
 
-	public String getResponseMsg() {
-		return responseMsg;
+	public String getResponse_msg() {
+		return response_msg;
 	}
 
-	public void setResponseMsg(String responseMsg) {
-		this.responseMsg = responseMsg;
+	public void setResponse_msg(String response_msg) {
+		this.response_msg = response_msg;
 	}
 
-	public String getExceptionMsg() {
-		return exceptionMsg;
+	public String getException_msg() {
+		return exception_msg;
 	}
 
-	public void setExceptionMsg(String exceptionMsg) {
-		this.exceptionMsg = exceptionMsg;
+	public void setException_msg(String exception_msg) {
+		this.exception_msg = exception_msg;
 	}
 
 }

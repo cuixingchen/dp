@@ -9,4 +9,8 @@
 		and request_time<![CDATA[>=]]>#{startTime}
 		and request_time<![CDATA[<]]>#{endTime}
 	</select>
+	
+	<select id="selectEop_LogListByResponse" resultType="executionLog">
+		select * from execution_log where response_msg=#{response_msg}
+	</select>
 </mapper>

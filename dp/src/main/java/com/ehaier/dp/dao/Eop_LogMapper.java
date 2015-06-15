@@ -25,5 +25,7 @@ public interface Eop_LogMapper {
 	 */
 	List<ExecutionLog> selectEop_LogList(@Param("code") String code,
 			@Param("startTime") Date startTime, @Param("endTime") Date endTime);
+	
+	List<ExecutionLog> selectEop_LogListByResponse(@Param("response_msg") String response_msg);
 
 }
