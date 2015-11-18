@@ -9,6 +9,11 @@
 		and paidAmount<![CDATA[<=]]>#{paidAmount}
 	</select>
 	
+	<select id="getShopOrderBySourceOrderSn" resultType="Integer">
+		select id from Orders
+		where sourceOrderSn = #{sourceOrderSn} and orderStatus!=202 limit 1
+	</select>
+	
 	<select id="getOrderProducts" resultType="orderProducts">
 		select * from OrderProducts where orderId=#{orderId}
 	</select>

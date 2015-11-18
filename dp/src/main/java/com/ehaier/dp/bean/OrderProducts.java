@@ -6,8 +6,17 @@ public class OrderProducts {
 
 	private Integer orderId;
 	private String cOrderSn;
+	private String sku;
 	private BigDecimal productAmount;
 	private BigDecimal couponAmount;
+
+	public String getSku() {
+		return sku;
+	}
+
+	public void setSku(String sku) {
+		this.sku = sku;
+	}
 
 	public Integer getOrderId() {
 		return orderId;

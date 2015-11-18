@@ -11,5 +11,7 @@ public interface ShopMapper {
 
 	List<Integer> getShopOrders(@Param("source")String source,@Param("paidAmount")BigDecimal paidAmount);
 	
+	Integer getShopOrderBySourceOrderSn(@Param("sourceOrderSn")String sourceOrderSn);
+	
 	List<OrderProducts> getOrderProducts(@Param("orderId")Integer orderId);
 }
