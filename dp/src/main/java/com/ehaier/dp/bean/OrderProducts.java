@@ -9,6 +9,26 @@ public class OrderProducts {
 	private String sku;
 	private BigDecimal productAmount;
 	private BigDecimal couponAmount;
+	private BigDecimal price;
+	private Long number;
+	
+	
+
+	public Long getNumber() {
+		return number;
+	}
+
+	public void setNumber(Long number) {
+		this.number = number;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
 
 	public String getSku() {
 		return sku;
